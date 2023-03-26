@@ -1,3 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Results</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+    
+    .no-results {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
 <?php
 
 // Create database connection.
@@ -21,3 +52,5 @@ if (mysqli_num_rows($result) > 0) {
         echo "0 results";
     }
 ?>
+</body>
+</html>
