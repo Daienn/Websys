@@ -1,13 +1,10 @@
-<!--WEBSYS PROJECT-->
+<!DOCTYPE html>
+
 <html>
     <head>
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
-        <link rel="stylesheet" href="bootstrap/animation.css"/>
+        <link rel="stylesheet" href="bootstrap/styles.min.css"/>
 
         <!-- Bootstrap JS -->
         <script src="js/script.min.js"></script>
@@ -17,12 +14,15 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no">
-        <title>Endurance Fitness - Login</title>
+        <title>Endurance Fitness - Reset Password</title>
     </head>
+
+    <?php
+    include 'nav.php';
+    ?>
+    
     <body>
-        <?php
-        include "nav.php";
-        ?>
+        
         <?php
         $email = $_GET["email"];
         $reset_token = $_GET["reset_token"];
@@ -46,26 +46,40 @@
                                     <input type="password" name="new_password" placeholder="Enter new password">
                                     <input type="submit" value="Change password">
                                 </form>-->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card">
-                            <div class="card-body text-center d-flex flex-column align-items-center">
-                                <h2 class="fw-bold">Please enter your new password</h2>                                        
-                                <form action="new-password.php" method="post">
-                                    <div class="mb-3"><input class="form-control" type="hidden" name="email" value="<?php echo $email; ?>"></div>
-                                    <div class="mb-3"><input class="form-control" type="hidden" name="reset_token" value="<?php echo $reset_token; ?>"></div>
+                <section class="py-5">
+                            <div class="container">
+                                <div class="row mb-5" style="margin-top: -60px;">
+                                    <div class="col-md-8 col-xl-6 text-center mx-auto">
+                                        <h1 class="display-5 fw-bold" style="color: rgb(0,192,163);">Reset Password</h1>
+                                        <h2 class="fw-bold" style="font-size: 23px;">Enter and confirm your new password</h2>
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-6 col-xl-4">
+                                        <div>
+                                            <form class="p-3 p-xl-4" action="new-password.php" method="post">
+                                                <div class="mb-3">
+                                                    <input class="form-control" type="hidden" name="email" value="<?php echo $email; ?>">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input class="form-control" type="hidden" name="reset_token" value="<?php echo $reset_token; ?>">
+                                                </div>
 
-
-                                    <div class="mb-3"><input required class="form-control" type="password" id="pwd" name="pwd" placeholder="Enter new password"></div>
-                                    <div class="mb-3"><input required class="form-control" type="password" id="pwd_confirm" name="pwd_confirm" placeholder="Confirm Password"></div>
-
-                                    <div class="mb-3"><button class="btn btn-primary shadow d-block w-100" type="submit">Change Password</button></div>
-                                </form>
-
+                                                <div>
+                                                    <input class="border rounded-pill required form-control" type="password" id="pwd" name="pwd" style="margin-bottom: 20px;" placeholder="Enter new password" required />
+                                                </div>
+                                                <div>
+                                                    <input class="border rounded-pill required form-control" type="password" id="pwd_confirm" name="pwd_confirm" style="margin-bottom: 20px;"  placeholder="Confirm password" required />
+                                                </div>
+                                                <div>
+                                                    <button class="btn btn-primary shadow d-block w-100" type="submit">Change Password</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </section>
                 <?php
             } else {
                 echo "Recovery email has been expired";
