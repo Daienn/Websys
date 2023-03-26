@@ -1,12 +1,10 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
-        <link rel="stylesheet" href="bootstrap/animation.css"/>
+        <link rel="stylesheet" href="bootstrap/styles.min.css"/>
 
         <!-- Bootstrap JS -->
         <script src="js/script.min.js"></script>
@@ -16,27 +14,38 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no">
-        <title>Endurance Fitness - Login</title>
+        <title>Endurance Fitness - Forget Password</title>
     </head>
+    
     <?php
     include "nav.php";
     ?>
     <body>
-
-        <form method="POST" action="send-recovery-mail.php">
-
-        <p class="text-center" style="font-size: 30px;padding: 40px;">
-            <strong>Please enter your email to reset your password</strong>
-            <label class="form-label d-lg-flex justify-content-lg-center" style="font-size: 20px;padding: 30px;padding-bottom: 30px;">
-                <strong>Email: </strong>
-                <input class="d-lg-flex justify-content-center align-items-center justify-content-lg-center" type="email" name="email" />
-            </label>
-            <button class="btn btn-primary text-center" type="submit">Reset Password</button>
-        </p>
-        </form>
-
-
-
+    <section class="py-5">
+            <div class="container">
+                <div class="row mb-5" style="margin-top: -60px;">
+                    <div class="col-md-8 col-xl-6 text-center mx-auto">
+                        <h1 class="display-5 fw-bold" style="color: rgb(0,192,163);">Forget Password</h1>
+                        <h2 class="fw-bold" style="font-size: 23px;">Enter your registered email address</h2>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 col-xl-4">
+                        <div>
+                            <form class="p-3 p-xl-4" method="POST" action="send-recovery-mail.php">
+                                <div class="mb-3">
+                                    <input class="border rounded-pill form-control" type="email" name="email" placeholder="Email">
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary shadow d-block w-100" type="submit">Reset Password</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <?php
         include "footer.php";
         ?>
