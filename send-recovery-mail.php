@@ -1,12 +1,10 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
-        <link rel="stylesheet" href="bootstrap/animation.css"/>
+        <link rel="stylesheet" href="bootstrap/styles.min.css"/>
 
         <!-- Bootstrap JS -->
         <script src="js/script.min.js"></script>
@@ -16,8 +14,9 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no">
-        <title>Endurance Fitness - Login</title>
+        <title>Endurance Fitness - Send Recovery Email</title>
     </head>
+    
     <?php
     include "nav.php";
     ?>
@@ -81,27 +80,18 @@
             $mail->Body = $message;
 
             $mail->send(); ?>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                        <div class="card-body text-center d-flex flex-column align-items-center">
-                            <h2 class="fw-bold">Message has been sent</h2>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-body">
+                <h1 class="display-5 fw-bold text-center align-content-stretch" style="font-size: 35px;color: rgb(0,192,163);">Message has been sent</h1>
             </div>
             <?php
         } catch (Exception $e) {
             ?>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                        <div class="card-body text-center d-flex flex-column align-items-center">
-                            <h2 class="fw-bold">Message could not be sent. Mailer Error: <?php{$mail->ErrorInfo}?></h2>
+                    <div class="card-body">
+                        <h1 class="display-5 fw-bold text-center text-warning align-content-stretch" style="font-size: 35px;">Message could not be sent</h1>
+                            <h2 class="fw-bold text-center" style="font-family: Inter, sans-serif; font-size: 23px;">Mailer Error: <?php{$mail->ErrorInfo}?></h2>
                         </div>
                     </div>
-                </div>
-            </div>
+
             <?php
         }
     }
