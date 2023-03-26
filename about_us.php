@@ -2,25 +2,21 @@
 
 <html>
     <head>
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
-        <link rel="stylesheet" href="bootstrap/animation.css"/>
-        
+        <link rel="stylesheet" href="bootstrap/styles.min.css"/>
+
         <!-- Bootstrap JS -->
         <script src="js/script.min.js"></script>
         <script src="js/carousel.js"></script>
         <script src="js/hoverAnimation.js"></script>
         <script src="js/bs-init.js"></script>
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no">
         <title>Endurance Fitness - About Us</title>
     </head>
-    
+
     <?php
     include 'nav.php';
     ?>
