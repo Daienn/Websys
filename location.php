@@ -2,28 +2,24 @@
 
 <html>
     <head>
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
-        <link rel="stylesheet" href="bootstrap/animation.css"/>
-        
+        <link rel="stylesheet" href="css/styles.min.css"/>
+
         <!-- Bootstrap JS -->
         <script src="js/script.min.js"></script>
         <script src="js/carousel.js"></script>
         <script src="js/hoverAnimation.js"></script>
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no">
         <title>Endurance Fitness - Location</title>
     </head>
-    
+
     <?php
     include 'nav.php';
     ?>
-    
+
     <body>
         <section class="py-5" style="margin-bottom: -25px;">
             <div class="container py-5">
@@ -34,7 +30,9 @@
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                    <div class="col mb-5"><iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD4mEc4Lv5plXZ6xyQ6NgUISDI-iJuNgZA&amp;q=Singapore+397628&amp;zoom=15" width="100%" height="400"></iframe></div>
+                    <div class="col mb-5">
+                        <iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD4mEc4Lv5plXZ6xyQ6NgUISDI-iJuNgZA&amp;q=Singapore+397628&amp;zoom=15" width="100%" height="400"></iframe>
+                    </div>
                     <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5" style="background: var(--bs-dark);">
                         <div>
                             <h3 class="fw-bold" style="padding-bottom: 0px;margin-bottom: 8px;font-family: Arvo, serif;margin-top: 10px;">Kallang</h3>
@@ -47,7 +45,9 @@
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                    <div class="col order-md-last mb-5"><iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDYBD4NNgaqyg2toDuUc7Gd6oKMmO0Rk3c&amp;q=Singapore+579799&amp;zoom=15" width="100%" height="400"></iframe></div>
+                    <div class="col order-md-last mb-5">
+                        <iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDYBD4NNgaqyg2toDuUc7Gd6oKMmO0Rk3c&amp;q=Singapore+579799&amp;zoom=15" width="100%" height="400"></iframe>
+                    </div>
                     <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5" style="background: var(--bs-dark);">
                         <div>
                             <h3 class="fw-bold" style="font-family: Arvo, serif;margin-top: 10px;">Bishan</h3>
@@ -71,7 +71,8 @@
                             <div class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-hand-thumbs-up-fill">
                                 <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <div class="px-2">
                                 <h5 class="mb-0 mt-1">Convenient Parking</h5>
                             </div>
@@ -158,10 +159,10 @@
                 </div>
             </div>
         </section>
-        
+
         <?php
         include 'footer.php';
         ?>
-        
+
     </body>
 </html>
