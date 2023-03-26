@@ -1,12 +1,10 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
-        <link rel="stylesheet" href="bootstrap/animation.css"/>
+        <link rel="stylesheet" href="bootstrap/styles.min.css"/>
 
         <!-- Bootstrap JS -->
         <script src="js/script.min.js"></script>
@@ -16,8 +14,10 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no">
-        <title>Endurance Fitness - Login</title>
+        <title>Endurance Fitness - New Password</title>
     </head>
+    
+    
     <?php
     include "nav.php";
     ?>
@@ -70,27 +70,28 @@
             $sql = "UPDATE gym_members SET reset_token='', password='$new_password' WHERE email='$email'";
             mysqli_query($connection, $sql);
             ?>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                        <div class="card-body text-center d-flex flex-column align-items-center">
-                            <h2 class="fw-bold">Password has been changed</h2>
+    
+            <section class="py-5">
+                <div class="container">
+                    <div class="row mb-5" style="margin-top: -60px;">
+                        <div class="col-md-8 col-xl-6 text-center mx-auto">
+                            <h1 class="display-5 fw-bold" style="color: rgb(0,192,163);">Password changed successfully</h1>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <?php
         } else {
             ?>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                        <div class="card-body text-center d-flex flex-column align-items-center">
-                            <h2 class="fw-bold">Recovery email has been expired</h2>
+            <section class="py-5">
+                <div class="container">
+                    <div class="row mb-5" style="margin-top: -60px;">
+                        <div class="col-md-8 col-xl-6 text-center mx-auto">
+                            <h1 class="display-5 fw-bold text-warning">Recovery email has expired</h1>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <?php
         }
     } else {
