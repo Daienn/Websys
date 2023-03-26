@@ -41,7 +41,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6" style="margin: 45px 0px 0px;margin-top: 44px;">
-                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="assets/img/team/avatar6.jpg">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="img/team/hanxiang.jpg">
                             <h2 class="fw-bold mb-0" style="font-family: Inter, sans-serif;"><strong>Kee Han Xiang</strong></h2>
                             <p class="text-muted mb-2" style="font-family: Arvo, serif;padding-bottom: 3px;margin-top: 2px;">Head Coach</p>
                         </div>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="col-md-6" style="padding-top: 0px;margin-top: 45px;">
-                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="assets/img/team/avatar6.jpg">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="img/team/daien.jpg">
                             <h2 class="fw-bold mb-0">Yap Dai En</h2>
                             <p class="text-muted mb-2" style="margin-top: 3px;font-family: Arvo, serif;">Bulking in progress...</p>
                         </div>
