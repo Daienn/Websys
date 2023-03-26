@@ -35,8 +35,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
             <div class="container py-5">
                 <div class="row mb-5">
                     <div class="col-md-8 col-xl-6 text-center mx-auto">
-                        <h1 class="display-1 fw-bold" style="color: rgb(0,192,163);"><span style="color: rgb(0, 192, 163);">Our Membership Plans</span></h1>
-                        <h2 class="fw-bold" style="font-family: Inter, sans-serif;"><strong>Choose the perfect plan to achieve your fitness goals with our membership options</strong></h2>
+                        <h1 class="display-5 fw-bold" style="color: rgb(0,192,163);"><span style="color: rgb(0, 192, 163);">Our Membership Plans</span></h1>
+                        <h2 class="fw-bold" style="font-family: Inter, sans-serif;font-size: 23px;"><strong>Choose the perfect plan to achieve your fitness goals with our membership options</strong></h2>
                     </div>
                 </div>
                 <div class="row g-0 row-cols-1 row-cols-md-2 row-cols-xl-3 d-flex align-items-md-center align-items-xl-center">
